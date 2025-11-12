@@ -1,10 +1,10 @@
-🎯 Propósito do Projeto
+ Propósito do Projeto
 
 Este projeto é uma simulação de uma ferramenta inteligente de orientação de carreiras, desenvolvida em Python com Orientação a Objetos. O sistema analisa um perfil profissional com base em competências-chave (como lógica, criatividade, colaboração) e gera recomendações de carreiras do futuro que mais se alinham a esse perfil.
 
 O foco é aplicar conceitos de lógica de programação, estruturas de dados e modularidade para criar uma solução que conecta o desenvolvimento humano e profissional às novas demandas do mercado de trabalho.
 
-✨ Funcionalidades Principais
+Funcionalidades Principais
 
     Avaliação de Perfil: O usuário insere seu nome e se autoavalia (com notas de 1 a 5) em um conjunto de competências-chave.
 
