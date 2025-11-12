@@ -6,28 +6,28 @@ O foco é aplicar conceitos de lógica de programação, estruturas de dados e m
 
 Funcionalidades Principais
 
-    Avaliação de Perfil: O usuário insere seu nome e se autoavalia (com notas de 1 a 5) em um conjunto de competências-chave.
+   Avaliação de Perfil: O usuário insere seu nome e se autoavalia (com notas de 1 a 5) em um conjunto de competências-chave.
 
-    Banco de Carreiras: O sistema possui um "banco de dados" interno de carreiras do futuro, cada uma com seus requisitos mínimos de competências.
+   Banco de Carreiras: O sistema possui um "banco de dados" interno de carreiras do futuro, cada uma com seus requisitos mínimos de competências.
 
-    Lógica de Compatibilidade: Um algoritmo calcula uma pontuação de compatibilidade entre o perfil do usuário e cada carreira disponível.
+   Lógica de Compatibilidade: Um algoritmo calcula uma pontuação de compatibilidade entre o perfil do usuário e cada carreira disponível.
 
-    Recomendações Personalizadas: O sistema exibe as 3 carreiras mais recomendadas para o usuário.
+   Recomendações Personalizadas: O sistema exibe as 3 carreiras mais recomendadas para o usuário.
 
-    Trilha de Aprimoramento: Para cada recomendação, o sistema aponta quais competências (gaps) o usuário precisa desenvolver para atingir os requisitos mínimos daquela carreira.
+   Trilha de Aprimoramento: Para cada recomendação, o sistema aponta quais competências (gaps) o usuário precisa desenvolver para atingir os requisitos mínimos daquela carreira.
 
-    Requisitos Técnicos Atendidos
+   Requisitos Técnicos Atendidos
 
-    Este projeto foi desenvolvido para atender especificamente aos seguintes requisitos:
+   Este projeto foi desenvolvido para atender especificamente aos seguintes requisitos:
 
-    Linguagem: Código 100% em Python 3.x.
+   Linguagem: Código 100% em Python 3.x.
 
-    Paradigma: Totalmente Orientado a Objetos (POO).
+   Paradigma: Totalmente Orientado a Objetos (POO).
 
-    Estrutura: Código organizado em módulos e classes.
+   Estrutura: Código organizado em módulos e classes.
 
-    Estruturas de Dados: Uso extensivo de listas, tuplas e dicionários para armazenar e processar os dados.
+   Estruturas de Dados: Uso extensivo de listas, tuplas e dicionários para armazenar e processar os dados.
 
-    Lógica: Implementação de funções e condicionais para gerar as recomendações.
+   Lógica: Implementação de funções e condicionais para gerar as recomendações.
 
-    Interface: Interação com o usuário através de uma Interface de Linha de Comando (CLI) simples e intuitiva.
+   Interface: Interação com o usuário através de uma Interface de Linha de Comando (CLI) simples e intuitiva.
