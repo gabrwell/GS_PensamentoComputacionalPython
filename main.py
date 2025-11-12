@@ -1,4 +1,3 @@
-# Em main.py
 
 from modulos.perfil import Perfil
 from modulos.carreira import Carreira
@@ -14,7 +13,6 @@ def carregar_dados_iniciais() -> Tuple[List[Carreira], Tuple[str, ...]]:
     """
     print("Carregando banco de dados de carreiras...")
 
-    # 1. Definir as competências-chave que o sistema irá avaliar
     # Usamos uma tupla por ser imutável
     COMPETENCIAS_CHAVE = ("logica", "criatividade", "colaboracao", "adaptabilidade", "comunicacao", "lideranca")
 
@@ -82,13 +80,12 @@ def coletar_perfil_usuario(competencias_chave: Tuple[str, ...]) -> Perfil:
     for comp in competencias_chave:
         while True:
             try:
-                # Trata a entrada do usuário
                 nota_str = input(f"  - {comp.capitalize()}: ").strip()
                 nota_int = int(nota_str)
 
                 if 1 <= nota_int <= 5:
                     perfil_usuario.adicionar_competencia(comp, nota_int)
-                    break  # Sai do loop 'while' e vai para a próxima competência
+                    break
                 else:
                     print("Nota inválida. Por favor, digite um número entre 1 e 5.")
             except ValueError:
@@ -101,7 +98,7 @@ def exibir_resultados(perfil: Perfil, recomendacoes: List[Tuple[int, Carreira]])
     """
     Formata e exibe os resultados da análise para o usuário.
     """
-    print(f"\n--- 🌟 Recomendações para {perfil.nome} ---")
+    print(f"\n--- Recomendações para {perfil.nome} ---")
 
     if not recomendacoes:
         print("Não foi possível gerar recomendações com base no seu perfil.")
@@ -111,7 +108,6 @@ def exibir_resultados(perfil: Perfil, recomendacoes: List[Tuple[int, Carreira]])
         print(f"\n{i + 1}. {carreira.nome} (Compatibilidade: {score} pontos)")
         print(f"   Descrição: {carreira.descricao}")
 
-        # Gerar trilha de aprimoramento (gaps)
         gaps = Analisador.identificar_gaps(perfil, carreira)
 
         if gaps:
@@ -119,7 +115,7 @@ def exibir_resultados(perfil: Perfil, recomendacoes: List[Tuple[int, Carreira]])
             for comp, diff in gaps:
                 print(f"     - {comp.capitalize()}: (Melhorar {diff} ponto(s))")
         else:
-            print("   ✅ Parabéns! Você atende a todos os requisitos mínimos desta carreira!")
+            print("    Parabéns! Você atende a todos os requisitos mínimos desta carreira!")
 
 
 def main():

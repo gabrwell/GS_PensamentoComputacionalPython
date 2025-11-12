@@ -1,4 +1,3 @@
-# Em modulos/analisador.py
 
 from modulos.perfil import Perfil
 from modulos.carreira import Carreira
@@ -21,7 +20,7 @@ class Analisador:
         requisitos_carreira = carreira.get_requisitos()
 
         if not requisitos_carreira:
-            return 0 # Não há requisitos para comparar
+            return 0
 
         for competencia, nota_req in requisitos_carreira.items():
             # Pega a nota do perfil, ou 0 se ele não tiver a competência
@@ -51,8 +50,6 @@ class Analisador:
             score = Analisador.calcular_compatibilidade(perfil, carreira)
             pontuacoes.append((score, carreira))
 
-        # Ordena a lista de tuplas pela pontuação (primeiro item da tupla),
-        # do maior para o menor.
         pontuacoes.sort(key=lambda item: item[0], reverse=True)
 
         return pontuacoes[:top_n]

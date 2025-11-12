@@ -1,4 +1,3 @@
-# Em modulos/perfil.py
 
 class Perfil:
     """
@@ -12,7 +11,6 @@ class Perfil:
             nome (str): O nome do usuário.
         """
         self.nome = nome
-        # Armazena as competências do usuário: {"logica": 4, "criatividade": 5}
         self.competencias: dict[str, int] = {}
 
     def adicionar_competencia(self, competencia: str, nota: int):

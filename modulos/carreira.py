@@ -1,4 +1,3 @@
-# Em modulos/carreira.py
 
 class Carreira:
     """
