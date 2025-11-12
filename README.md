@@ -16,7 +16,7 @@ Funcionalidades Principais
 
     Trilha de Aprimoramento: Para cada recomendação, o sistema aponta quais competências (gaps) o usuário precisa desenvolver para atingir os requisitos mínimos daquela carreira.
 
-    🔧 Requisitos Técnicos Atendidos
+    Requisitos Técnicos Atendidos
 
     Este projeto foi desenvolvido para atender especificamente aos seguintes requisitos:
 
